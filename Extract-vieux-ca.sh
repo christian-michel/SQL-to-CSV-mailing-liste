@@ -38,9 +38,9 @@
 ma_base=annuaire
 ma_table=entreprises
 
-mysql_server=54.36.120.164
-mysql_user=annuaire
-mysql_pass=Q46R0ufPFrneTUDcQHRA
+mysql_server=ip-server
+mysql_user=userSQL
+mysql_pass=passwordSQL
 read -p 'On souhaite trouver les fiches annuaires dont le CA est antérieur ou égal à : ' annee_vieux_ca
 
 requete_sql="SELECT id, annee_ca, annee_ca_groupe, guide_eco, guide_innov FROM $ma_base.$ma_table"

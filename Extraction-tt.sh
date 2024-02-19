@@ -44,9 +44,9 @@
 ma_base=annuaire
 ma_table=entreprises
 
-mysql_server=149.202.73.27
-mysql_user=annuaire
-mysql_pass=Q46R0ufPFrneTUDcQHRA
+mysql_server=ip-server
+mysql_user=userSQL
+mysql_pass=passwordSQL
 
 requete_sql="SELECT * FROM $ma_base.$ma_table"
 chemin=`pwd`

@@ -48,10 +48,10 @@ mysql_server=ip-server
 mysql_user=userSQL
 mysql_pass=passwordSQL
 
-requete_sql="SELECT id, email, contact_maj_email FROM $ma_base.$ma_table"
+requete_sql="SELECT id, secteur_eco, email, contact_maj_email FROM $ma_base.$ma_table WHERE (secteur_eco='Sport') OR (secteur_eco='Emballage / Papier / Carton') OR (secteur_eco='Electrique / Electronique') OR (secteur_eco='Cosmétique / Parfumerie') OR (secteur_eco='Mécanique / Métallurgie') OR (secteur_eco='Navale / Nautique') OR (secteur_eco='Santé') OR (secteur_eco='Plasturgie / Caoutchouc / Composites') OR (secteur_eco='Textile / Habillement / Cuir') OR (secteur_eco='Constructeurs automobiles / Véhicules industriels') OR (secteur_eco='Bâtiment / Construction') OR (secteur_eco='Aéronautique / Aérospatiale') OR (secteur_eco='Agroalimentaire') OR (secteur_eco='Biens d\'équipement') OR (secteur_eco='Bois / Ameublement') OR (secteur_eco='Biens de consommation') OR (secteur_eco='Chimie')"
 chemin=`pwd`
 ma_date=`date '+%Y-%m-%d_%Hh%Mmin%Ss'`
-save_name=01_extraction_verif_fiche_anuaire_$ma_date.csv
+save_name=Extraction_bdd_guides_mails_industrie_$ma_date.csv
 
 
 mysql --default-character-set=utf8 -h $mysql_server -u $mysql_user --password=$mysql_pass -e "$requete_sql" | tr '\t' ',' | sed "s/$/\,/" > $chemin/$save_name
