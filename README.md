@@ -6,8 +6,8 @@ Actions réalisées par le script lorsqu'on l'execute :
 
 1 - extraction de la base de données
 
-2 - filtre selon certains critères
+2 - filtre selon certains critères -> exclusion de certains mails
 
-3 - vérification de la validaté des adresses mails
+3 - vérification de la validité des adresses mails
 
-4 - création d'un fichier csv associant l'id de la fiche société au mail valide et correspondant aux critères de filtre
+4 - création d'un fichier csv associant l'id de la fiche société au mail valide et correspondant aux critères de filtre + création d'un fichier de récupération des erreures
