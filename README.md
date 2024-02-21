@@ -1,4 +1,4 @@
-4 scripts pour créer une liste d'envoi avec un lien de bouton personnalisé dans chaque mail.
+4 scriptsb bash, qui se connectent a la base de données SQL d'un site et qui extraient les valeurs de certains champs, pour créer une liste d'envoi avec un lien de bouton personnalisé dans chaque mail.
 
 Les scripts ont été créés pour que des utilisateurs puissent accéder à leur fiche société dans un annuaire en ligne pour vérifier les infos et au besoin les mettre à jour.
 
